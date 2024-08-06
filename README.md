@@ -56,7 +56,7 @@ Test Data - Read Access: email: jimmy.doe@example.com | pwd: Js3Ml3Al
 
 Test Data - Report Access: email: jett.doe@example.com | pwd: Js3Ml3Al
 
-# ====================== Goals achieved ======================
+# =========== Goals achieved ===========
 - DB Development
   - Tables: DynatronCustomer, DynatronUser, Menu, UserProfile and Profile_Has_Menu
   - Relationships between tables
