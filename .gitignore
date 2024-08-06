@@ -1,0 +1,20 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Application.API/bin/Debug/net7.0
+/Application.API/obj
+/Sistema.Utility/bin/Debug/net7.0
+/Sistema.Utility/obj
+/Sistema.IOC/bin/Debug/net7.0
+/Sistema.IOC/obj
+/Sistema.Model/bin/Debug/net7.0
+/Sistema.Model/obj
+/Sistema.DTO/bin/Debug/net7.0
+/Sistema.DTO/obj
+/Sistema.DAL/bin/Debug/net7.0
+/Sistema.DAL/obj
+/Sistema.BLL/obj
+/Sistema.BLL/bin/Debug/net7.0
+/ClientAppTemplate/.vscode

@@ -1,0 +1,14 @@
+F:\Develop\Dynatron Technical Assesment\Sistema.Model\bin\Debug\net8.0\Sistema.Model.deps.json
+F:\Develop\Dynatron Technical Assesment\Sistema.Model\bin\Debug\net8.0\Sistema.Model.runtimeconfig.json
+F:\Develop\Dynatron Technical Assesment\Sistema.Model\bin\Debug\net8.0\Sistema.Model.dll
+F:\Develop\Dynatron Technical Assesment\Sistema.Model\bin\Debug\net8.0\Sistema.Model.pdb
+F:\Develop\Dynatron Technical Assesment\Sistema.Model\obj\Debug\net8.0\Sistema.Model.csproj.AssemblyReference.cache
+F:\Develop\Dynatron Technical Assesment\Sistema.Model\obj\Debug\net8.0\Sistema.Model.GeneratedMSBuildEditorConfig.editorconfig
+F:\Develop\Dynatron Technical Assesment\Sistema.Model\obj\Debug\net8.0\Sistema.Model.AssemblyInfoInputs.cache
+F:\Develop\Dynatron Technical Assesment\Sistema.Model\obj\Debug\net8.0\Sistema.Model.AssemblyInfo.cs
+F:\Develop\Dynatron Technical Assesment\Sistema.Model\obj\Debug\net8.0\Sistema.Model.csproj.CoreCompileInputs.cache
+F:\Develop\Dynatron Technical Assesment\Sistema.Model\obj\Debug\net8.0\Sistema.Model.dll
+F:\Develop\Dynatron Technical Assesment\Sistema.Model\obj\Debug\net8.0\refint\Sistema.Model.dll
+F:\Develop\Dynatron Technical Assesment\Sistema.Model\obj\Debug\net8.0\Sistema.Model.pdb
+F:\Develop\Dynatron Technical Assesment\Sistema.Model\obj\Debug\net8.0\Sistema.Model.genruntimeconfig.cache
+F:\Develop\Dynatron Technical Assesment\Sistema.Model\obj\Debug\net8.0\ref\Sistema.Model.dll

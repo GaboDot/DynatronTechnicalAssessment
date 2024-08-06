@@ -1,0 +1,17 @@
+F:\Develop\Dynatron Technical Assesment\Sistema.Utility\bin\Debug\net8.0\Sistema.Utility.deps.json
+F:\Develop\Dynatron Technical Assesment\Sistema.Utility\bin\Debug\net8.0\Sistema.Utility.dll
+F:\Develop\Dynatron Technical Assesment\Sistema.Utility\bin\Debug\net8.0\Sistema.Utility.pdb
+F:\Develop\Dynatron Technical Assesment\Sistema.Utility\bin\Debug\net8.0\Sistema.DTO.dll
+F:\Develop\Dynatron Technical Assesment\Sistema.Utility\bin\Debug\net8.0\Sistema.Model.dll
+F:\Develop\Dynatron Technical Assesment\Sistema.Utility\bin\Debug\net8.0\Sistema.DTO.pdb
+F:\Develop\Dynatron Technical Assesment\Sistema.Utility\bin\Debug\net8.0\Sistema.Model.pdb
+F:\Develop\Dynatron Technical Assesment\Sistema.Utility\obj\Debug\net8.0\Sistema.Utility.csproj.AssemblyReference.cache
+F:\Develop\Dynatron Technical Assesment\Sistema.Utility\obj\Debug\net8.0\Sistema.Utility.GeneratedMSBuildEditorConfig.editorconfig
+F:\Develop\Dynatron Technical Assesment\Sistema.Utility\obj\Debug\net8.0\Sistema.Utility.AssemblyInfoInputs.cache
+F:\Develop\Dynatron Technical Assesment\Sistema.Utility\obj\Debug\net8.0\Sistema.Utility.AssemblyInfo.cs
+F:\Develop\Dynatron Technical Assesment\Sistema.Utility\obj\Debug\net8.0\Sistema.Utility.csproj.CoreCompileInputs.cache
+F:\Develop\Dynatron Technical Assesment\Sistema.Utility\obj\Debug\net8.0\Sistema..93448E35.Up2Date
+F:\Develop\Dynatron Technical Assesment\Sistema.Utility\obj\Debug\net8.0\Sistema.Utility.dll
+F:\Develop\Dynatron Technical Assesment\Sistema.Utility\obj\Debug\net8.0\refint\Sistema.Utility.dll
+F:\Develop\Dynatron Technical Assesment\Sistema.Utility\obj\Debug\net8.0\Sistema.Utility.pdb
+F:\Develop\Dynatron Technical Assesment\Sistema.Utility\obj\Debug\net8.0\ref\Sistema.Utility.dll
