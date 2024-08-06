@@ -50,17 +50,11 @@ FrontEnd Project
 3. run the command > ng serve -o
 4. You must see the login page
 
-Test Data - Admin Access
-email: john.doe@example.com
-pwd: JS3Ml3Al5
+Test Data - Admin Access: email: john.doe@example.com | pwd: JS3Ml3Al5
 
-Test Data - Read Access
-email: jimmy.doe@example.com
-pwd: Js3Ml3Al
+Test Data - Read Access: email: jimmy.doe@example.com | pwd: Js3Ml3Al
 
-Test Data - Report Access
-email: jett.doe@example.com
-pwd: Js3Ml3Al
+Test Data - Report Access: email: jett.doe@example.com | pwd: Js3Ml3Al
 
 =========== Goals achieved ===========
 - DB Development
