@@ -1,0 +1,68 @@
+h1{
+    margin: 0!important;
+    text-align: center;
+}
+
+.mat-drawer-side {
+    border-right: solid 1px var(--accent-bg);
+}
+
+mat-sidenav-container, #main-toolbar {
+    background-color: transparent !important;
+    color: var(--main-text-color);
+}
+
+mat-sidenav {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+
+#main-toolbar {
+    border-bottom: solid 1px var(--accent-bg);
+}
+
+#logoToolBar {
+    width: 220px;
+    height: 65px;
+    background-image: url('/assets/Imagenes/LogoWhite.png');
+    background-repeat: no-repeat;
+    background-size: 175px;
+    background-position: left;
+}
+
+.mat-line{
+    display: inline-block;
+    margin: 0.15em 0 0 1em !important;
+    vertical-align: top;
+    color: var(--main-text-color) !important;
+}
+
+mat-icon {
+    color: var(--main-text-color);
+}
+
+@media only screen and (max-width: 600px)  {
+    #logoToolBar {
+        margin-right: 3em;
+        width: 40px;
+        background-image: url('/assets/Imagenes/LogoWhiteMini.png');
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: left;
+    }
+}
+
+mat-sidenav-content {
+    padding: 1em;
+    background-color: #cfd8dc;
+    color: var(--accent-text-color);
+}
+
+mat-sidenav-content mat-card {
+    padding: 1em;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: var(--basic-shadow);  
+    -moz-box-shadow: var(--basic-shadow);
+    box-shadow: var(--basic-shadow);
+}

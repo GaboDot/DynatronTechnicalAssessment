@@ -1,0 +1,36 @@
+.body {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    background-color: ghostwhite;
+    background-image: url('/assets/Images/DynatronBG.jpg');
+}
+
+.loginCard {
+    max-width: 450px !important;
+    margin: 2em auto;
+    text-align: center;
+    max-height: 600px;
+    -webkit-box-shadow: var(--login-shadow);
+    -moz-box-shadow: var(--login-shadow);
+    box-shadow: var(--login-shadow);
+}
+
+.header {
+    text-align: center;
+    padding: 0.5em;
+}
+
+.full-width {
+    width: 80%;
+}
+
+#buttonLogin {
+    background-color: #567894;
+    color: var(--main-text-color);
+}
+
+#buttonLogin[disabled] {
+    background-color: #757575;
+}

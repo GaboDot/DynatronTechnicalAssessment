@@ -1,0 +1,193 @@
+:root {
+  --main-bg-color: #2E404F;
+  --main-text-color: #F5F5F5;
+  --accent-bg: #47637A;
+  --accent-text-color: #5F5F5F;
+  --login-shadow: 5px 5px 5px -1px rgb(255, 255, 255, 0.5);
+  --basic-shadow: 5px 5px 5px -1px rgb(0, 0, 0, 0.75);
+  --button-shadow: 3px 3px 2px -1px rgb(0, 0, 0, 0.45);
+  --font-family: Roboto, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--main-bg-color);
+  font-size: 0.75em;
+  height: 100vh;
+}
+
+.cdk-global-scrollblock {
+  overflow: hidden;
+}
+
+th.encabezadoField {
+  font-size: 1em;
+  color: #f5f5f5;
+  background-color: #78909c;
+  border: solid 1px #F5F5F5;
+}
+
+  th.encabezadoField.k-sorted {
+    color: #f5f5f5;
+    background-color: #009688;
+    border: solid 1px #F5F5F5;
+  }
+
+.k-grid-header .k-sort-icon,
+.k-grid-header .k-sort-order {
+  font-size: 1.5em;
+  color: #f5f5f5;
+}
+
+.k-table-td {
+  font-size: 0.85em;
+}
+
+.mat-mdc-snack-bar-container .mat-mdc-button.mat-mdc-snack-bar-action:not(:disabled) {
+  color: #fff !important;
+  --mat-mdc-button-persistent-ripple-color: currentColor;
+}
+
+.mat-mdc-snack-bar-container {
+  --mdc-snackbar-supporting-text-color: #ffffff;
+  &.notif-error
+
+{
+  --mdc-snackbar-container-color: #f23a2f;
+}
+
+&.notif-success {
+  --mdc-snackbar-container-color: #43a047;
+}
+
+&.notif-warning {
+  --mdc-snackbar-container-color: #EC7E06;
+}
+
+}
+
+.mat-mdc-dialog-container {
+  box-shadow: var(--basic-shadow);
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #b0bec5 #e3e3e3;
+  scroll-behavior: smooth;
+}
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #e3e3e3;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #b0bec5;
+    border-radius: 20px;
+    border: none;
+  }
+/* ================== */
+
+/* ======= Custom Kendo styles ========== */
+.baseButton {
+  color: #F5F5F5;
+  border: none;
+  transition: 0.5s all;
+  box-shadow: var(--button-shadow);
+  margin: 0.25em;
+  border-radius: 5px;
+  vertical-align: middle;
+  &.primary
+
+{
+  background-color: #4BA5CF;
+}
+
+&.primary mat-icon {
+  font-size: 2em;
+}
+
+&.secondary {
+  height: 32px;
+  margin: 0;
+  background-color: #4BA5CF;
+}
+
+  &.secondary:hover {
+    background-color: #3D7A98;
+  }
+
+  &.secondary mat-icon {
+    top: 3px;
+    margin: 0;
+  }
+
+&.save {
+  background-color: #28BFBA;
+  padding: 5px;
+}
+
+&.cancel {
+  background-color: #e53935;
+}
+
+}
+
+.baseButton mat-icon {
+  position: relative;
+  top: 2px;
+  margin-right: 5px;
+}
+
+.baseButton label {
+  margin-right: 5px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  top: -4px;
+}
+
+.baseButton.primary:hover {
+  background-color: #2B7BA2;
+}
+
+.baseButton.save:hover {
+  background-color: #209B98;
+}
+
+.baseButton.cancel:hover {
+  background-color: #BE1D18;
+}
+
+/* TAB INACTIVO */
+.k-tabstrip-items-wrapper .k-item {
+  color: #F5F5F5;
+  background-color: #757575;
+  transition: all 0.5s ease-in-out;
+}
+
+  /* TAB ACTIVO */
+  .k-tabstrip-items-wrapper .k-item.k-active {
+    color: #F5F5F5;
+    background-color: #0097a7;
+  }
+
+  .k-tabstrip-items-wrapper .k-item:hover {
+    background-color: #78909c;
+    color: #F5F5F5;
+  }
+/* ================== */
