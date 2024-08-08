@@ -26,6 +26,7 @@ import { MatTooltipModule } from '@angular/material/tooltip'
 import { MatAutocompleteModule } from '@angular/material/autocomplete'
 import { MatDatepickerModule } from '@angular/material/datepicker'
 import { MatNativeDateModule } from '@angular/material/core'
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MomentDateModule } from '@angular/material-moment-adapter'
 import { LayoutModule } from '@angular/cdk/layout'
 import { DomSanitizer } from '@angular/platform-browser';
@@ -79,6 +80,7 @@ import { UtilityService } from './utility.service';
     MatAutocompleteModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatSlideToggleModule,
     MomentDateModule,
     GridModule,
     DialogModule,
