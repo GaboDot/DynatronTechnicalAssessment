@@ -1,8 +1,8 @@
 .mat-table {
-    overflow: auto;
-    max-height: 500px;
-  }
-  
-  .mat-header-cell.mat-sort-header-sorted {
-    color: black;
-  }
+  overflow: auto;
+  max-height: 500px;
+}
+
+.mat-header-cell.mat-sort-header-sorted {
+  color: black;
+}
