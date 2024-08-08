@@ -55,6 +55,11 @@ th.encabezadoField {
   --mat-mdc-button-persistent-ripple-color: currentColor;
 }
 
+.mat-mdc-snack-bar-container .mdc-button__label {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
 .mat-mdc-snack-bar-container {
   --mdc-snackbar-supporting-text-color: #ffffff;
   &.notif-error
@@ -100,6 +105,46 @@ th.encabezadoField {
     border-radius: 20px;
     border: none;
   }
+/* ================== */
+
+/* ======= Custom Material styles ========== */
+
+.edit-icon {
+  color: #009688;
+}
+
+.grid-icon-button {
+  width: 60px !important;
+  min-width: unset !important;
+}
+
+.grid-icon-button > mat-icon{
+  margin: 0 !important;
+  font-size: 1.5em !important;
+}
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+  background-color: red !important;
+}
+
+.mdc-switch {
+  --mdc-switch-selected-icon-size: 14px !important;
+}
+
+.mat-mdc-slide-toggle.mat-primary {
+  --mdc-switch-selected-focus-state-layer-color: #388e3c;
+  --mdc-switch-selected-handle-color: #388e3c;
+  --mdc-switch-selected-hover-state-layer-color: #388e3c;
+  --mdc-switch-selected-pressed-state-layer-color: #388e3c;
+  --mdc-switch-selected-focus-handle-color: #4caf50;
+  --mdc-switch-selected-hover-handle-color: #4caf50;
+  --mdc-switch-selected-pressed-handle-color: #4caf50;
+  --mdc-switch-selected-focus-track-color: #388e3c;
+  --mdc-switch-selected-hover-track-color: #388e3c;
+  --mdc-switch-selected-pressed-track-color: #388e3c;
+  --mdc-switch-selected-track-color: #388e3c;
+}
+
 /* ================== */
 
 /* ======= Custom Kendo styles ========== */
