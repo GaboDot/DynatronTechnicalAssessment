@@ -39,14 +39,33 @@ namespace BackEnd.API.Controllers
         }
 
         [HttpPost]
+        [Route("SaveCustomer")]
+        public async Task<IActionResult> SaveNewCustomer([FromBody] DynatronCustomerDTO customer)
+        {
+            var response = new Response<int>();
+            try
+            {
+                response.status = true;
+                response.value = (await _customerService.InsertCustomer(customer)).CustomerId;
+            }
+            catch (Exception ex)
+            {
+                response.status = false;
+                response.message = ex.Message;
+            }
+
+            return Ok(response);
+        }
+
+        [HttpPost]
         [Route("UpdateCustomer")]
         public async Task<IActionResult> UpdateCustomer([FromBody] DynatronCustomerDTO customer)
         {
-            var response = new Response<string>();
+            var response = new Response<DynatronCustomerDTO>();
             try
             {
-                response.status = await _customerService.UpdateCustomer(customer);
-                response.value = $"Updated Customer {customer.CustomerId}";
+                response.status = true;
+                response.value = await _customerService.UpdateCustomer(customer);
             }
             catch (Exception ex)
             {
