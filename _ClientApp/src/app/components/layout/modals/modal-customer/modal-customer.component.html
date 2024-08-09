@@ -1,1 +1,35 @@
-<p>modal-customer works!</p>
+<h2 mat-dialog-title>{{ modalTitle }} Customer</h2>
+<mat-dialog-content>
+    <form [formGroup]="customerForm">
+        <mat-grid-list cols="1" rowHeight="90px">
+            <mat-grid-tile>
+                <mat-form-field appearance="outline">
+                    <mat-label>First Name</mat-label>
+                    <input matInput autocomplete="off" formControlName="firstName">
+                    <mat-icon matSuffix>person</mat-icon>
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-form-field appearance="outline">
+                    <mat-label>Last Name</mat-label>
+                    <input matInput autocomplete="off" formControlName="lastName">
+                    <mat-icon matSuffix>person</mat-icon>
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput autocomplete="off" formControlName="email">
+                    <mat-icon matSuffix>mail_outline</mat-icon>
+                </mat-form-field>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-raised-button class="material-save" [disabled]="customerForm.invalid" (click)="saveUpdateCustomer()">
+        <mat-icon mat-list-icon>save</mat-icon>{{ buttonText }}</button>
+    <button mat-raised-button mat-dialog-close color="warn">
+        <mat-icon mat-list-icon>cancel</mat-icon>Close
+    </button>
+</mat-dialog-actions>
