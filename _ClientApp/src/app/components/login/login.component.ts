@@ -45,7 +45,7 @@ export class LoginComponent {
         next: (data) => {
           if(data.status) {
             this._sessionService.saveSession(data.value);
-            this.router.navigate(['pages']);
+            this.router.navigate(['pages/sales-report']);
           }
           else {
             this._utilityService.showAlert('Invalid Email / Password', 'Close', 'notif-warning');
