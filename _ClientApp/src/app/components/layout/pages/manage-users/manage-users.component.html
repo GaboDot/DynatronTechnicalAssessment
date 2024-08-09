@@ -1,9 +1,13 @@
-<mat-card-content class="dashboard-card-content">
-    <div style="display: flex; flex-direction: column; min-width: 300px;;">
+<h1 style="margin: 20px 0 0 40px;">Manage Customers / Users</h1>
+<mat-card>
+    <mat-card-content class="dashboard-card-content">
         <mat-form-field appearance="outline" class="input-filter">
             <mat-label>Filter</mat-label>
             <input matInput (keyup)="filterData($event)" #input>
         </mat-form-field>
+        <button mat-raised-button color="primary" style="float: right;"> <!-- (click)="nuevoDepartamento()"> -->
+            <mat-icon mat-list-icon>add</mat-icon>Add Customer
+        </button>
         <div class="mat-elevation-z2">
             <table mat-table #customersTable [dataSource]="customersData" matSort #customersSort="matSort">
                 <ng-container matColumnDef="customerId">
@@ -56,5 +60,5 @@
             </table>
             <mat-paginator [pageSizeOptions]="[10]" showFirstLastButtons></mat-paginator>
         </div>
-    </div>
-</mat-card-content>
+    </mat-card-content>
+</mat-card>
