@@ -34,6 +34,7 @@ namespace BackEnd.BLL.Services
         {
             try
             {
+                model.CreatedDate = DateTime.Now;
                 var customerCreate = await _repo.Insert(_mapper.Map<DynatronCustomer>(model));
                 if (customerCreate.CustomerId == 0)
                     throw new TaskCanceledException("Unable to create Customer");
@@ -64,6 +65,7 @@ namespace BackEnd.BLL.Services
                 foundCustomer.LastName = model.LastName;
                 foundCustomer.Email = model.Email;
                 foundCustomer.Status = model.Status;
+                foundCustomer.UpdatedDate = DateTime.Now;
 
                 bool result = await _repo.Update(foundCustomer);
                 if (!result)
