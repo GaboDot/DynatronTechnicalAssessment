@@ -14,4 +14,6 @@ public partial class Menu
     public string? MenuLink { get; set; }
 
     public short ParentMenu { get; set; }
+
+    public bool? MenuStatus { get; set; }
 }

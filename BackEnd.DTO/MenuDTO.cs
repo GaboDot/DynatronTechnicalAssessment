@@ -18,6 +18,8 @@ namespace BackEnd.DTO
 
         public short ParentMenu { get; set; }
 
+        public bool MenuStatus { get; set; }
+
         public List<MenuDTO> SubMenus { get; set; } = null!;
     }
 }
