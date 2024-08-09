@@ -1,4 +1,5 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSlideToggleChange } from '@angular/material/slide-toggle';
 import { MatSort, Sort } from '@angular/material/sort';
@@ -8,6 +9,7 @@ import { Customer } from 'src/app/interfaces/customer';
 import { SessionService } from 'src/app/reusable/shared/session.service';
 import { UtilityService } from 'src/app/reusable/shared/utility.service';
 import { CustomerService } from 'src/app/services/customer.service';
+import { ModalCustomerComponent } from '../../modals/modal-customer/modal-customer.component';
 
 @Component({
   selector: 'app-manage-users',
@@ -22,6 +24,7 @@ export class ManageUsersComponent {
   @ViewChild('customersSort') customersSort = new MatSort();
 
   constructor(
+    private dialog: MatDialog,
     private _customerService: CustomerService,
     private _sesssionService: SessionService,
     private _utilityService: UtilityService,
@@ -94,6 +97,15 @@ export class ManageUsersComponent {
         }
       },
       error: (e) => { }
+    });
+  }
+
+  showModalCustomer(customer?: Customer) {
+    this.dialog.open(ModalCustomerComponent, {
+      disableClose: true,
+      data: customer ?? null
+    }).afterClosed().subscribe((result) => {
+      if(result) this.getCustomers();
     });
   }
 }
