@@ -52,7 +52,7 @@ namespace BackEnd.BLL.Services
             {
                 IQueryable<Menu> tbResult = (from m in tbMenu
                                              where m.ParentMenu == menuID
-                                             select m).AsQueryable().Where(m => m.MenuStatus == true);
+                                             select m).AsQueryable().Where(m => m.MenuStatus == true).OrderBy( m => m.MenuText);
                 var menuList = _mapper.Map<List<MenuDTO>>(tbResult.ToList());
                 foreach (var menu in menuList)
                     menu.SubMenus = await GetSubMenus(menu.MenuId);
