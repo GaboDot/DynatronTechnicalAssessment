@@ -18,6 +18,10 @@ export class CustomerService {
     return this.http.get<ResponseApi>(`${this.urlApi}GetCustomers`);
   }
 
+  savenewCustomer(toSave: Customer): Observable<ResponseApi> {
+    return this.http.post<ResponseApi>(`${this.urlApi}UpdateCustomer`, toSave);
+  }
+
   updateCustomer(toUpdate: Customer): Observable<ResponseApi> {
     return this.http.post<ResponseApi>(`${this.urlApi}UpdateCustomer`, toUpdate);
   }
