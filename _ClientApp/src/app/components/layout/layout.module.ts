@@ -7,6 +7,7 @@ import { LoadingSpinnerComponent } from './modals/loading/loading.component';
 import { ManageUsersComponent } from './pages/manage-users/manage-users.component';
 import { AddUserComponent } from './pages/add-user/add-user.component';
 import { SalesReportComponent } from './pages/sales-report/sales-report.component';
+import { ModalCustomerComponent } from './modals/modal-customer/modal-customer.component';
 
 
 
@@ -15,7 +16,8 @@ import { SalesReportComponent } from './pages/sales-report/sales-report.componen
     LoadingSpinnerComponent,
     ManageUsersComponent,
     AddUserComponent,
-    SalesReportComponent
+    SalesReportComponent,
+    ModalCustomerComponent
   ],
   imports: [
     CommonModule,
