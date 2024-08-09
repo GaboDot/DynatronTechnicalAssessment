@@ -6,6 +6,7 @@ import { SharedModule } from 'src/app/reusable/shared/shared.module';
 import { LoadingSpinnerComponent } from './modals/loading/loading.component';
 import { ManageUsersComponent } from './pages/manage-users/manage-users.component';
 import { AddUserComponent } from './pages/add-user/add-user.component';
+import { SalesReportComponent } from './pages/sales-report/sales-report.component';
 
 
 
@@ -13,7 +14,8 @@ import { AddUserComponent } from './pages/add-user/add-user.component';
   declarations: [
     LoadingSpinnerComponent,
     ManageUsersComponent,
-    AddUserComponent
+    AddUserComponent,
+    SalesReportComponent
   ],
   imports: [
     CommonModule,
