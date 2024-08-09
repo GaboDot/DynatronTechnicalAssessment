@@ -1,1 +1,59 @@
-<p>sales-report works!</p>
+<mat-tab-group>
+    <mat-tab label="Daily Report">
+        <kendo-chart>
+            <kendo-chart-title text="Units sold"></kendo-chart-title>
+            <kendo-chart-category-axis>
+                <kendo-chart-category-axis-item
+                    [categories]="['00:00', '01:00', '02:00', '03:00', '04:00', '05:00', '06:00', '07:00', '08:00', '09:00', '10:00', '11:00']">
+                </kendo-chart-category-axis-item>
+            </kendo-chart-category-axis>
+            <kendo-chart-series>
+                <kendo-chart-series-item
+                    [style]="style"
+                    type="line"
+                    [data]="[20, 1, 18, 3, 15, 5, 10, 6, 9, 6, 10, 5]"
+                    [markers]="{ visible: false }"
+                >
+                </kendo-chart-series-item>
+            </kendo-chart-series>
+        </kendo-chart>
+    </mat-tab>
+    <mat-tab label="Weekly Report">
+        <kendo-chart>
+            <kendo-chart-title text="Units sold"></kendo-chart-title>
+            <kendo-chart-category-axis>
+                <kendo-chart-category-axis-item
+                    [categories]="['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']">
+                </kendo-chart-category-axis-item>
+            </kendo-chart-category-axis>
+            <kendo-chart-series>
+                <kendo-chart-series-item
+                    [style]="style"
+                    type="line"
+                    [data]="[155, 182, 120, 193, 174, 115, 100]"
+                    [markers]="{ visible: false }"
+                >
+                </kendo-chart-series-item>
+            </kendo-chart-series>
+        </kendo-chart>
+    </mat-tab>
+    <mat-tab label="Montly Report">
+        <kendo-chart>
+            <kendo-chart-title text="Units sold"></kendo-chart-title>
+            <kendo-chart-category-axis>
+                <kendo-chart-category-axis-item
+                    [categories]="['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']">
+                </kendo-chart-category-axis-item>
+            </kendo-chart-category-axis>
+            <kendo-chart-series>
+                <kendo-chart-series-item
+                    [style]="style"
+                    type="line"
+                    [data]="[2120, 2542, 2789, 2512, 2824, 2154, 2110, 2540, 2987, 2345, 2698, 2458]"
+                    [markers]="{ visible: false }"
+                >
+                </kendo-chart-series-item>
+            </kendo-chart-series>
+        </kendo-chart>
+    </mat-tab>
+  </mat-tab-group>

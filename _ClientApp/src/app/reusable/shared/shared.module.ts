@@ -27,7 +27,8 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete'
 import { MatDatepickerModule } from '@angular/material/datepicker'
 import { MatNativeDateModule } from '@angular/material/core'
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { MomentDateModule } from '@angular/material-moment-adapter'
+import { MomentDateModule } from '@angular/material-moment-adapter';
+import { MatTabsModule } from '@angular/material/tabs';
 import { LayoutModule } from '@angular/cdk/layout'
 import { DomSanitizer } from '@angular/platform-browser';
 import { MultilevelMenuService, NgMaterialMultilevelMenuModule } from 'ng-material-multilevel-menu';
@@ -45,6 +46,7 @@ import { DropDownListModule } from '@progress/kendo-angular-dropdowns'
 import { TooltipsModule } from "@progress/kendo-angular-tooltip";
 import { DatePickerModule } from '@progress/kendo-angular-dateinputs';
 import { LayoutModule as KendoLayout } from '@progress/kendo-angular-layout';
+import { ChartsModule } from "@progress/kendo-angular-charts";
 
 // Custom services
 import { TokenInterceptorService } from 'src/app/services/interceptors/token-interceptor.service';
@@ -81,6 +83,7 @@ import { UtilityService } from './utility.service';
     MatDatepickerModule,
     MatNativeDateModule,
     MatSlideToggleModule,
+    MatTabsModule,
     MomentDateModule,
     GridModule,
     DialogModule,
@@ -92,6 +95,7 @@ import { UtilityService } from './utility.service';
     DropDownListModule,
     TooltipsModule,
     DatePickerModule,
+    ChartsModule,
     KendoLayout,
     NgMaterialMultilevelMenuModule,
     MatSortModule,

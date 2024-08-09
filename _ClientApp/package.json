@@ -22,6 +22,7 @@
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
     "@progress/kendo-angular-buttons": "^13.4.0",
+    "@progress/kendo-angular-charts": "^13.4.0",
     "@progress/kendo-angular-common": "^13.4.0",
     "@progress/kendo-angular-dateinputs": "^13.4.0",
     "@progress/kendo-angular-dropdowns": "^13.4.0",

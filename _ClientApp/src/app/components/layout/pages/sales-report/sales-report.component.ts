@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LineStyle } from '@progress/kendo-angular-charts';
 
 @Component({
   selector: 'app-sales-report',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./sales-report.component.css']
 })
 export class SalesReportComponent {
+
+  public style: LineStyle = "normal";
 
 }
