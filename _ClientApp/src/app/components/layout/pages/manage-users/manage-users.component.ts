@@ -39,7 +39,9 @@ export class ManageUsersComponent {
         }
         else this._utilityService.showAlert('No data found.', '✖', 'notif-warning');
       },
-      error: (e) => {}
+      error: (e) => {
+        this._sesssionService.disposeSession();
+      }
     });
   }
 
