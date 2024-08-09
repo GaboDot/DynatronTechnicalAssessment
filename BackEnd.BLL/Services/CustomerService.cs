@@ -46,7 +46,7 @@ namespace BackEnd.BLL.Services
             catch(Exception) { throw; }
         }
 
-        public async Task<bool> UpdateCustomer(DynatronCustomerDTO model)
+        public async Task<DynatronCustomerDTO> UpdateCustomer(DynatronCustomerDTO model)
         {
             try
             {
@@ -71,7 +71,9 @@ namespace BackEnd.BLL.Services
                 if (!result)
                     throw new TaskCanceledException($"Customer: {customerModel.CustomerId}\nUnable to update customer information.");
 
-                return result;
+
+                var query = await _repo.Query(c => c.CustomerId == foundCustomer.CustomerId);
+                return _mapper.Map<DynatronCustomerDTO>(foundCustomer);
             }
             catch(Exception) { throw; }
         }

@@ -13,6 +13,6 @@ namespace BackEnd.BLL.Services.Contract
 
         Task<DynatronCustomerDTO> InsertCustomer(DynatronCustomerDTO model);
 
-        Task<bool> UpdateCustomer(DynatronCustomerDTO model);
+        Task<DynatronCustomerDTO> UpdateCustomer(DynatronCustomerDTO model);
     }
 }
