@@ -145,6 +145,15 @@ th.encabezadoField {
   --mdc-switch-selected-track-color: #388e3c;
 }
 
+.material-save {
+  background-color: #43a047 !important;
+  color: #FFF !important;
+
+  &[disabled][disabled] {
+   background-color: #B0B0B0 !important; 
+  }
+}
+
 /* ================== */
 
 /* ======= Custom Kendo styles ========== */
