@@ -33,6 +33,7 @@ export class ManageUsersComponent {
   }
 
   getCustomers() {
+    this._utilityService.showLoadingSpinner();
     this._customerService.getAllCustomers().subscribe({
       next: (response) => {
         if(response.status) {
@@ -41,8 +42,10 @@ export class ManageUsersComponent {
           this.customersData.paginator = this.pagTable;
         }
         else this._utilityService.showAlert('No data found.', '✖', 'notif-warning');
+        setTimeout(() => this._utilityService.closeLoadingSpinner(), 500);
       },
       error: (e) => {
+        this._utilityService.closeLoadingSpinner();
         this._sesssionService.disposeSession();
       }
     });
@@ -50,7 +53,6 @@ export class ManageUsersComponent {
 
   ngOnInit(): void {
     const loggedUser = this._sesssionService.getSession();
-    this._utilityService.showLoadingSpinner();
     if(loggedUser != null){
       this.getCustomers();
     }
@@ -62,7 +64,6 @@ export class ManageUsersComponent {
 
   ngAfterViewInit(): void {
     this.customersData.sort = this.customersSort;
-    setTimeout(() => this._utilityService.closeLoadingSpinner(), 500);
   }
 
   filterData(event: Event) {
@@ -82,6 +83,7 @@ export class ManageUsersComponent {
     this._customerService.updateCustomer(toUpdate).subscribe({
       next: (response) => {
         if(response.status) {
+          (this.customersData.data[customerIdx] as Customer).updatedDate = response.value['updatedDate'];
           setTimeout(() => {
             this._utilityService.closeLoadingSpinner()
             this._utilityService.showAlert('Status updated!', '✖', 'notif-success')
